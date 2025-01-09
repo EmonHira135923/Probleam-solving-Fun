@@ -13,16 +13,15 @@ int main()
     int N;
     cin >> N;
 
-    if(N==1)
+    vector<int> myvalue(N);
+    for(int i=0;i<N;i++) cin >> myvalue[i];
+
+    sort(myvalue.rbegin(),myvalue.rend());
+
+    for(int i=0;i<N;i++)
     {
-        cout << "-1" << endl;
-    }
-    else
-    {
-        for(int i=1;i<=N;i++)
-        {
-            if(i%2==0) cout << i << endl;
-        }
+        cout << myvalue[0];
+        break;
     }
 
     return 0;
