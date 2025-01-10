@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+#define endl '\n'
+#define ll long long
+#include<string.h>
+#include<string>
+using namespace std;
+
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    string A,B;
+    string C,D;
+
+    cin >> A >> B;
+    cin >> C >> D;
+
+    if(B==D) cout << "ARE Brothers" << endl;
+    else cout << "NOT" << endl;
+
+    return 0;
+}
