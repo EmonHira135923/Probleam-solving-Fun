@@ -1,26 +1,21 @@
 #include<bits/stdc++.h>
 #define endl '\n'
 #define ll long long
+#define FASTIO ios::sync_with_stdio(false);cin.tie(nullptr);
 #include<string.h>
 #include<string>
 using namespace std;
 
 int main()
 {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+    FASTIO;
 
     int N;
     cin >> N;
 
-    bool flag = false;
-
     for(int i=1;i<=N;i++)
     {
-        if(N%i==0)
-        {
-            cout << i << endl;
-        }
+        cout << i << endl;
     }
 
     return 0;
