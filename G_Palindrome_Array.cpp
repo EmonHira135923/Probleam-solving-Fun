@@ -16,26 +16,22 @@ int main()
     vector<int> value(N);
     for(int i=0;i<N;i++) cin >> value[i];
 
+    bool flag = true;
     int i,j;
-    i = 0,j=N-1;
+    i = 0;j=N-1;
 
-    bool flag = false;
-
-    while(i<=j)
+    while(i<j)
     {
-        if(value[i]<value[j])
+        if(value[i]!=value[j])
         {
-            flag = true;
+            flag = false;
             break;
         }
         i++;
         j--;
-
-        cout << value[i] << " ";
     }
 
     if(flag) cout << "YES" << endl;
     else cout << "NO" << endl;
-
     return 0;
 }
