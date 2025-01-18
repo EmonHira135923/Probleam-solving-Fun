@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+#define endl '\n'
+#define ll long long
+#define FASTIO ios::sync_with_stdio(false);cin.tie(nullptr);
+#include<string.h>
+#include<string>
+using namespace std;
+
+int main()
+{
+    FASTIO;
+
+    int N;
+    cin >> N;
+
+    vector<int> value(N);
+    for(int i=0;i<N;i++) cin >> value[i];
+
+    for(int i=0;i<N;i++)
+    {
+        if(value[i]>0) cout << "1" << " ";
+        else if(value[i]==0) cout << "0" << " ";
+        else cout << "2" << " ";
+    }
+
+    return 0;
+}
