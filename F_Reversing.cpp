@@ -12,12 +12,9 @@ int main()
 
     int N;
     cin >> N;
-    vector<int> value(N);
 
-    for(int i=0;i<N;i++)
-    {
-        cin >> value[i];
-    }
+    vector<int> value(N);
+    for(int i=0;i<N;i++) cin >> value[i];
 
     reverse(value.begin(),value.end());
 
