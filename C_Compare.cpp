@@ -10,20 +10,12 @@ int main()
 {
     FASTIO;
 
-    int N;
-    cin >> N;
+    string word,Word;
+    cin >> word >> Word;
 
-    int K = 1;
 
-    for(int i=1;i<=N;i++)
-    {
-        for(int j=1;j<=K;j++)
-        {
-            cout << "*";
-        }
-        K++;
-        cout << endl;
-    }
+    if(word<Word) cout << word << endl;
+    else cout << Word << endl; 
 
     return 0;
 }

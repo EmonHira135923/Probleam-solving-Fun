@@ -10,20 +10,17 @@ int main()
 {
     FASTIO;
 
-    int N;
-    cin >> N;
+    string word,Word;
+    cin >> word >> Word;
 
-    int K = 1;
+    cout << word.length() << " " << Word.size() << endl;
+    cout << word << Word << endl;
+    
+    swap(word[0],Word[0]);
 
-    for(int i=1;i<=N;i++)
-    {
-        for(int j=1;j<=K;j++)
-        {
-            cout << "*";
-        }
-        K++;
-        cout << endl;
-    }
+    cout << word << " " << Word << endl;
+    
+
 
     return 0;
 }

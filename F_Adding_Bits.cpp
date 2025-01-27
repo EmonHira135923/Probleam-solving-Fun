@@ -10,20 +10,13 @@ int main()
 {
     FASTIO;
 
-    int N;
-    cin >> N;
+    ll a,b;
+    cin >> a >> b;
 
-    int K = 1;
+    ll sum;
 
-    for(int i=1;i<=N;i++)
-    {
-        for(int j=1;j<=K;j++)
-        {
-            cout << "*";
-        }
-        K++;
-        cout << endl;
-    }
+    sum = a^b;
 
+    cout << sum << endl;
     return 0;
 }
