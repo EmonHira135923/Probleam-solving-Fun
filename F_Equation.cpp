@@ -10,17 +10,18 @@ using namespace __gnu_pbds;
 using namespace std;
 template <typename T> using pbds = tree<T, null_type, less_equal<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
-bool solve(int N)
+ll solve(ll a,ll b)
 {
-    while(N>0)
-    {
-        int digit = N%10;
-        if(digit != 4 && digit != 7) return false;
-        N /= 10;
-    }
-    return true;
-}
 
+    ll result = 1;
+    for(ll i=0;i<b;i++) 
+    {
+        result *= a;
+    } 
+
+    return result;
+
+}
 int main()
 {
 
@@ -29,18 +30,15 @@ int main()
     ll a,b;
     cin >> a >> b;
 
-    bool flag = false;
+    ll ans = 0;
 
-    for(int i=a;i<=b;i++)
+    for(ll i=0;i<=b;i+=2)
     {
-        if(solve(i))
-        {
-            flag = true;
-            cout << i << " ";
-        }
+        ans += solve(a,i);
     }
+
     
-    if(!flag) cout << "-1" << endl;
+    cout << ans-1 << endl;
 
     return 0;
 }

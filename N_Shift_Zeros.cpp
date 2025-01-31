@@ -9,38 +9,40 @@
 using namespace __gnu_pbds;
 using namespace std;
 template <typename T> using pbds = tree<T, null_type, less_equal<T>, rb_tree_tag, tree_order_statistics_node_update>;
-
-bool solve(int N)
+void solve()
 {
-    while(N>0)
-    {
-        int digit = N%10;
-        if(digit != 4 && digit != 7) return false;
-        N /= 10;
-    }
-    return true;
-}
 
+    int N;
+    cin >> N;
+
+    vector<int> value(N);
+    for(int i=0;i<N;i++) cin >> value[i];
+
+    int index = 0;
+
+    for(int i=0;i<N;i++)
+    {
+        if(value[i]!=0)
+        {
+            swap(value[i],value[index]);
+            index++;
+        }
+    }
+
+    for(int i=0;i<N;i++)
+    {
+        cout << value[i] << " ";
+    }
+    cout << endl;
+
+
+}
 int main()
 {
 
     FASTIO;
 
-    ll a,b;
-    cin >> a >> b;
-
-    bool flag = false;
-
-    for(int i=a;i<=b;i++)
-    {
-        if(solve(i))
-        {
-            flag = true;
-            cout << i << " ";
-        }
-    }
-    
-    if(!flag) cout << "-1" << endl;
+    solve();
 
     return 0;
 }
