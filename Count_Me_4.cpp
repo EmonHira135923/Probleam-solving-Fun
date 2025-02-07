@@ -9,12 +9,29 @@
 using namespace __gnu_pbds;
 using namespace std;
 template <typename T> using pbds = tree<T, null_type, less_equal<T>, rb_tree_tag, tree_order_statistics_node_update>;
-int solve(string val,int i)
+void solve()
 {
 
-   if(val[i]=='\0') return 0;
-   int cnt = solve(val,i+1);
-   return cnt+1; 
+    string word;
+    cin >> word;
+
+    int N = word.size();
+
+    vector<int> freq(26,0);
+    for(int i=0;i<N;i++)
+    {
+        freq[word[i]-'a']++;
+    }
+
+    for(int i=0;i<26;i++)
+    {
+        if(freq[i]!=0)
+        {
+            cout << char(i+'a') << " " << "-" << " " << freq[i] << endl;
+        }
+    }
+
+    
 
 }
 int main()
@@ -22,12 +39,15 @@ int main()
 
     FASTIO;
 
-    string word;
-    cin >> word;
+    solve();
 
-    int result = solve(word,0);
+    // int t;
+    // cin >> t;
 
-    cout << result << endl;
+    // while(t--)
+    // {
+    //     solve();
+    // }
 
     return 0;
 }

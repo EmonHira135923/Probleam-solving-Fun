@@ -9,25 +9,12 @@
 using namespace __gnu_pbds;
 using namespace std;
 template <typename T> using pbds = tree<T, null_type, less_equal<T>, rb_tree_tag, tree_order_statistics_node_update>;
-int solve(string val,int i)
-{
-
-   if(val[i]=='\0') return 0;
-   int cnt = solve(val,i+1);
-   return cnt+1; 
-
-}
 int main()
 {
 
     FASTIO;
 
-    string word;
-    cin >> word;
-
-    int result = solve(word,0);
-
-    cout << result << endl;
+    cout << "Hello, world! I am learning C programming language. ^_^ Programming is fun and challenging. /\\/\\/\\I want to give my 100% dedication to learn!	I will succeed one day." << endl;
 
     return 0;
 }

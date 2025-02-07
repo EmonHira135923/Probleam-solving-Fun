@@ -9,12 +9,13 @@
 using namespace __gnu_pbds;
 using namespace std;
 template <typename T> using pbds = tree<T, null_type, less_equal<T>, rb_tree_tag, tree_order_statistics_node_update>;
-int solve(string val,int i)
+ll solve(vector<ll> &value,ll N,ll i)
 {
 
-   if(val[i]=='\0') return 0;
-   int cnt = solve(val,i+1);
-   return cnt+1; 
+   if(i==N) return 0;
+   ll ans = solve(value,N,i+1);
+   return value[i]+ans;
+
 
 }
 int main()
@@ -22,12 +23,15 @@ int main()
 
     FASTIO;
 
-    string word;
-    cin >> word;
+    ll N;
+    cin >> N;
 
-    int result = solve(word,0);
+    vector<ll> value(N);
+    for(int i=0;i<N;i++) cin >> value[i];
 
-    cout << result << endl;
+    ll ans = solve(value,N,0);
+
+    cout << ans << endl;
 
     return 0;
 }
