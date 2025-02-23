@@ -1,0 +1,1 @@
+{"name":"Local: sum_of_array","url":"d:\\My Probleam Solution\\sum_of_array.cpp","tests":[{"id":1739455627770,"input":"4\n2 7 11 15\n9","output":"0 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\My Probleam Solution\\sum_of_array.cpp","group":"local","local":true}

@@ -9,15 +9,6 @@
 using namespace __gnu_pbds;
 using namespace std;
 template <typename T> using pbds = tree<T, null_type, less_equal<T>, rb_tree_tag, tree_order_statistics_node_update>;
-void solve(int i,int N)
-{
-    int sp,st;
-    sp = N-i,st=2*i-1;
-    if(i==N+1) return;
-    solve(i+1,N);
-    cout << string(sp,' ') << string(st,'*') << endl;
-
-}
 int main()
 {
 
@@ -25,7 +16,26 @@ int main()
 
     int N;
     cin >> N;
-    solve(1,N);
 
+    vector<int> value(N);
+    for(int i=0;i<N;i++) cin >> value[i];
+
+    int x;
+    cin >> x;
+
+    bool flag = false;
+
+    for(int i=0;i<value.size()-1;i++)
+    {
+        for(int j=i+1;j<value.size();j++)
+        {
+            if(value[i]+value[j]==x)
+            {
+                cout << i << " " << j << endl;
+                flag = true;
+                break;
+            }
+        }
+    }
     return 0;
 }
