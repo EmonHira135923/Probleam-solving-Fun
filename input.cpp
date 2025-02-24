@@ -57,7 +57,16 @@ int main()
 
     FASTIO;
 
+    // string word;
+    // cin >> word;
 
+    // int pos;
+    // cin >> pos;
+
+    // int ans;
+    // cin >> ans;
+
+    // cout << word.erase(pos,ans) << endl;
     
 
 
