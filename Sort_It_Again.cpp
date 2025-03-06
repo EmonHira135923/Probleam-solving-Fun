@@ -9,21 +9,20 @@ class Student
         int Class;
         string Section;
         int  id;
-        int  English; 
-        int  Math;       
+        int  Math; 
+        int  English;       
 };
 bool total_mark(Student a,Student b)
 {
-    int total_mark_a =  a.English+a.Math;
-
-    int total_mark_b = b.English+b.Math;
-
-    if(total_mark_a == total_mark_b)
+    if(a.English == b.English)
     {
-        return a.id < b.id;
+        if(a.Math == b.Math)
+        {
+            return a.id < b.id;
+        }
+        return a.Math > b.Math;
     }
-    return total_mark_a > total_mark_b;
-
+    return a.English > b.English;
 }
 int main()
 {
@@ -41,13 +40,13 @@ int main()
         cin >> Array[i].Class;
         cin >> Array[i].Section;
         cin >> Array[i].id;
-        cin >> Array[i].English;
         cin >> Array[i].Math; 
+        cin >> Array[i].English; 
     }
     sort(Array,Array+N,total_mark);
     for(int i=0;i<N;i++)
     {
-        cout << Array[i].Name << " " << Array[i].Class << " " << Array[i].Section << " " << Array[i].id << " " << Array[i].English << " " << Array[i].Math << endl;
+        cout << Array[i].Name << " " << Array[i].Class << " " << Array[i].Section << " " << Array[i].id << " " << Array[i].Math  << " " << Array[i].English << endl;
     }
 
     delete[] Array;

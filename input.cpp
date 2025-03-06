@@ -50,12 +50,67 @@ template <typename T> using pbds = tree<T, null_type, less_equal<T>, rb_tree_tag
 //     return Emon;
 // }
 
-
-
+// int solve(stringstream& ans)
+// {
+//     string result;
+//     int cnt = 0;
+//     if(ans>>result)
+//     {  
+//         cnt++;
+//     }
+//     return cnt;
+// }
 int main()
 {
 
     FASTIO;
+
+    // int val;
+    // cin >> val;
+    // while(val!=0)
+    // {
+    //     int ans = val%10;
+    //     val /= 10; 
+    //     cout << ans << endl;
+    // }
+
+    cout << "Emon";
+    // int N;
+    // cin >> N;
+    
+    // vector<int> value(N);
+    // for(int i=0;i<N;i++) cin >> value[i];
+
+    int val;
+    cin >> val;
+
+    cout << val << endl;
+
+    // int pos;
+    // cin >> pos;
+    // int val;
+    // cin >> val;
+
+    // value.insert(value.begin()+pos,val);
+
+    // for(int ans : value) cout << ans << " ";
+    // cout << endl;
+
+
+    // string stringstream
+
+    // string word;
+    // getline(cin,word);
+
+    // stringstream ans(word);
+    // int result = solve(ans);
+
+    // cout << result << endl;
+
+
+
+
+    // string input ::->
 
     // string word;
     // cin >> word;
@@ -68,11 +123,6 @@ int main()
 
     // cout << word.erase(pos,ans) << endl;
     
-
-
-
-
-
 
     //  Crate Class 
 

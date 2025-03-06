@@ -1,1 +1,1 @@
-{"name":"Local: input","url":"d:\\My Probleam Solution\\input.cpp","tests":[{"id":1739803572645,"input":"EmonHHira\n4 1 ","output":"1 2 3 4 5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\My Probleam Solution\\input.cpp","group":"local","local":true}
+{"name":"Local: input","url":"d:\\My Probleam Solution\\input.cpp","tests":[{"id":1739803572645,"input":"102","output":"1 2 100 3 4 5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\My Probleam Solution\\input.cpp","group":"local","local":true}
