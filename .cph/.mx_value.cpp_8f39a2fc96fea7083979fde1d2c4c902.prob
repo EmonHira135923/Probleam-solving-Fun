@@ -1,0 +1,1 @@
+{"name":"Local: mx_value","url":"d:\\My Probleam Solution\\mx_value.cpp","tests":[{"id":1741813896992,"input":"1 5 6 8 9 -1","output":"YES"},{"id":1741813909776,"input":"2 4 6 5 8 4 -1","output":"NO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\My Probleam Solution\\mx_value.cpp","group":"local","local":true}

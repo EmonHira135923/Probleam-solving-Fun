@@ -1,0 +1,1 @@
+{"name":"Local: List_size_cnt","url":"d:\\My Probleam Solution\\List_size_cnt.cpp","tests":[{"id":1741600427627,"input":"5 1 4 5 -1","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\My Probleam Solution\\List_size_cnt.cpp","group":"local","local":true}
